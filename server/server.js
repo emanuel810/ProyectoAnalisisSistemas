@@ -22,11 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // set the port
-const port = process.env.PORT || 3001;
+const port = 'http://localhost/4000';
 
 // connect to database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/mern-crud');
+mongoose.connect('mongodb+srv://emanueldionicio809:GyZAnPPSIfF2NHr5@cluster0.ayocyoj.mongodb.net');
 SourceMapSupport.install();
 app.get('/', (req,res) => {
   return res.end('Api working');

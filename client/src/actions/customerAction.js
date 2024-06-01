@@ -1,7 +1,7 @@
 import {GET_CUSTOMERS, ADD_CUSTOMER,DELETE_CUSTOMER } from '../constants/ActionTypes';
 import axios from "axios";
 import history from '../history'
-const API_URL = 'http://localhost:3001/api/';
+const API_URL = 'http://localhost:4000/api/';
 
 export const getCustomers = () => dispatch => {
     return fetch(API_URL+'customers')
